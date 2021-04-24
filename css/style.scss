@@ -1,0 +1,28 @@
+//!---<外框> h1,p--- <內容物> span---
+h1,
+p {
+  background-color: red;
+  //!---block系列---<外框>--block換行--inline不換行 ; <內容物> 不換行 寬度固定---
+  //display: inline-block; //*---<外框>不換行，不重疊。<內容物> 不換行 寬度固定
+  //display: block; //*---<外框>換行，不重疊。<內容物> 不換行 寬度固定
+  //display: inline; //*---<外框>不換行，部分重疊。<內容物> 不換行 寬度固定
+  //!---flex系列---<外框>--flex換行--inline不換行 ;<內容物> 不換行 寬度可變---
+  //display: flex; //*---<外框>換行，<內容物> 不換行 寬度可變
+  //display: inline-flex; //*---<外框>不換行，<內容物> 不換行 寬度可變
+  //!---grid系列--<外框>--grid換行--inline不換行 ;<內容物> 換行 寬度可變---
+  //display: grid; //*---<外框>換行，不重疊。<內容物> 換行 寬度可變
+  //display: inline-grid; //*---<外框>不換行，不重疊。<內容物> 換行 寬度可變
+  //!---table系列---<外框>換行 ; <內容物> 不換行 寬度固定---
+  display: table; //!---<外框大小-自動符合內容物>
+
+  padding: 10px;
+  margin: 10px;
+
+  span {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 7px;
+    margin: 10px;
+  }
+}

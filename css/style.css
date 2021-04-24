@@ -1,0 +1,17 @@
+h1,
+p {
+  background-color: red;
+  display: table;
+  padding: 10px;
+  margin: 10px;
+}
+
+h1 span,
+p span {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 7px;
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */
